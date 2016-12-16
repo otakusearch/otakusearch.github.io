@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<indices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<index>
+		<Genre>Unlisted</Genre>
+		<Anime>Death Billards</Anime>
+		<AnimeSources>http://kissanime.io/Anime/death-billiards/</AnimeSources>
+		<Dubbed>unavailable</Dubbed>
+		<Manga>unavailable</Manga>
+		<MangaSources>unavailable</MangaSources>
+	</index>
+	<index>
+		<Genre>Unlisted</Genre>
+		<Anime>Detective Conan </Anime>
+		<AnimeSources>http://kissanime.io/Anime/detective-conan-sub/</AnimeSources>
+		<Dubbed>unavailable</Dubbed>
+		<Manga>unavailable</Manga>
+		<MangaSources>unavailable</MangaSources>
+	</index>
+	<index>
+		<Genre>Unlisted</Genre>
+		<Anime>Final Fantasy 7</Anime>
+		<AnimeSources>http://kissanime.io/Anime/final-fantasy-vii-advent-children-dub/</AnimeSources>
+		<Dubbed>unavailable</Dubbed>
+		<Manga>unavailable</Manga>
+		<MangaSources>unavailable</MangaSources>
+	</index>
+	<index>
+		<Genre>Action</Genre>
+		<Anime>Dragon Ball Z</Anime>
+		<AnimeSources>http://kissanime.io/Anime/dragon-ball-z-sub/</AnimeSources>
+		<Dubbed>unavailable</Dubbed>
+		<Manga>unavailable</Manga>
+		<MangaSources>unavailable</MangaSources>
+	</index>
+</indices>
