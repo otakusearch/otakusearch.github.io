@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Otaku Search Engine - Anime & Manga Search Engine</title>
+<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/responsiveImg.js"></script>
+<script type="text/javascript" src="js/tablesorter.js"></script>
+<script id="data" type="text/javascript" src="js/search.js" xmlData="data/data.xml"></script>
+<link rel="stylesheet" href="css/default.css" />
+<style type="text/css">
+	.myButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 30px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.col-1 {width: 75%}
+</style>
+<style type="text/css">
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+</style>
+<script>
+function myFunction() {
+    document.getElementById("display").innerHTML = "Built upon XML parser, tablesorter.js and JQuery. Developed by SNRG97. We do not endorse any link shown on this site. For removal email at snrg97@protonmail.com. All Rights Reserved 2016-2017. Site work in progress.";
+}
+</script>
+</head>
+<body><div class="row"><div class="col-9 col-s-9">
+<img src="images/logo.gif"></div></div>
+<!--div--responsive-->
+<div id="controller">
+  <label>Search :
+    <input type="text" id="term">
+  </label>
+  <label>&nbsp;&nbsp;
+  <select name="category" id="category">
+      <option value="none">Please Select a Type</option>
+      <option value="Genre">Genre</option>
+      <option value="Anime">Anime</option>
+      <option value="AnimeSources">Anime Sources</option>
+      <option value="Dubbed">Dubbed</option>
+      <option value="Manga">Manga</option>
+      <option value="MangaSources">Manga Sources</option>
+
+    </select>
+  </label>&nbsp;&nbsp;
+  <button class="myButton" id="searchButton">Search</button>
+</div>
+<div id="result">&nbsp;</div>
+<!--ends-->
+</body>
+</html>
